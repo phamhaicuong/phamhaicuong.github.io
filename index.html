@@ -3,21 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phạm Hải Cường - Profile</title>
+    <title>Phạm Hải Cường | Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; background: #121212; color: white; text-align: center; padding: 50px; }
-        .card { background: #1e1e1e; padding: 30px; border-radius: 20px; display: inline-block; max-width: 500px; width: 100%; }
-        .link { display: block; background: #333; margin: 10px 0; padding: 15px; text-decoration: none; color: white; border-radius: 10px; }
-        .link:hover { background: #444; }
+        :root { --bg: #0f172a; --card: rgba(30, 41, 59, 0.7); --text: #f8fafc; --accent: #8b5cf6; }
+        body { 
+            background: radial-gradient(circle at center, #1e293b, #0f172a);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            display: flex; justify-content: center; align-items: center;
+            height: 100vh; margin: 0;
+        }
+        .container {
+            background: var(--card);
+            backdrop-filter: blur(15px);
+            padding: 2rem;
+            border-radius: 24px;
+            border: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            width: 300px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        h1 { font-size: 1.5rem; margin-bottom: 0.5rem; color: #fff; }
+        .btn {
+            display: block; background: rgba(255,255,255,0.05);
+            padding: 12px; margin: 12px 0; border-radius: 12px;
+            text-decoration: none; color: #cbd5e1; font-weight: 500;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s ease;
+        }
+        .btn:hover { background: var(--accent); color: white; transform: translateY(-3px); }
     </style>
 </head>
 <body>
-    <div class="card">
+    <div class="container">
         <h1>Phạm Hải Cường</h1>
-        <p>Sinh viên Phenikaa | Coder</p>
-        <a class="link" href="https://www.facebook.com/phamhaicuong8386">Facebook</a>
-        <a class="link" href="https://www.tiktok.com/@your_tiktok_id">TikTok</a>
-        <a class="link" href="https://discord.com/users/YOUR_USER_ID">Discord</a>
+        <p style="font-size: 0.9rem; color: #94a3b8;">Phenikaa University | Coder</p>
+        <a class="btn" href="https://www.facebook.com/phamhaicuong8386">Facebook</a>
+        <a class="btn" href="https://www.tiktok.com/@your_tiktok_id">TikTok</a>
+        <a class="btn" href="https://discord.com/users/YOUR_USER_ID">Discord</a>
     </div>
 </body>
 </html>
